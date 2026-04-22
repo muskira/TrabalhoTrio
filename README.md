@@ -1,6 +1,9 @@
 Trabalho em grupo Senac - Entra21 - Java Noturno 17/04/2026.
+
 Evelin Paola Macedo Oliarski
+
 Heloísa Martins Felizetti
+
 Fabiano Nicolodelli da Silva Chagas
 
 Exercício 1 – Calculadora com Menu
