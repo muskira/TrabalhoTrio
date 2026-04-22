@@ -13,31 +13,31 @@ public class Calculadora {
             System.out.println("3 - multiplicação");
             System.out.println("4 - divisão");
             System.out.println("0 - sair \n");
-            System.out.print("opcão:  ");
+            System.out.print("R$:  ");
 
             opcao = scanner.nextInt();
 
             if (opcao >= 1 && opcao <= 4) {
-                System.out.print("Digite o primeiro numero:  ");
+                System.out.print("Digite o primeiro número:  ");
                 double num1 = scanner.nextDouble();
-                System.out.print("Digite o segundo numero:  ");
+                System.out.print("Digite o segundo número:  ");
                 double num2 = scanner.nextDouble();
 
                 processarOperacoes(opcao, num1, num2);
             } else if (opcao != 0) {
-                System.out.println("erro: opcao invalida ! tente novamente.");
+                System.out.println("Erro: opção invalida ! tente novamente.");
             }
 
-        } while (opcao != 0);
+        }   while (opcao != 0);
 
-        System.out.println("Programa encerrado. Até logo!");
-        scanner.close();
+            System.out.println("Fim do programa!");
+            scanner.close();
     }
 
-    private static void processarOperacoes(int opcao, double num1, double num2) {
-        double resultado;
+            private static void processarOperacoes(int opcao, double num1, double num2) {
+            double resultado;
 
-        switch (opcao) {
+            switch (opcao) {
             case 1:
                 resultado = num1 + num2;
                 System.out.printf("Resultado da soma %.2f\n",resultado);
@@ -55,10 +55,10 @@ public class Calculadora {
                     resultado = num1 / num2;
                     System.out.printf("Resultado da divisão: %.2f\n", resultado);
                 } else {
-                    System.out.println("Némero invalido!");
+                    System.out.println("Número invalido!");
 
                 }
-        }
+            }
     }
 }
 
